@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "feynman"
+version = "0.1.0"
+description = "Background service: bookmarks → NotebookLM via local Ollama topic classification"
+requires-python = ">=3.11"
+dependencies = [
+    "pyyaml>=6.0.3",
+    "requests>=2.32.0",
+]
+
+[project.scripts]
+feynman = "feynman.__main__:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/feynman"]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=8.0",
+    "pytest-mock>=3.14",
+]

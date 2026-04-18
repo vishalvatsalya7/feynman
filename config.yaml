@@ -1,0 +1,15 @@
+playlists:
+  # - id: "PLBXpeaigbfvR_BhtcnyvDzizWXJnyypqB"
+    # notebook: "My Custom Name"  # optional — defaults to the playlist's title on YouTube
+
+  # Add more playlists here:
+  - id: "PLBXpeaigbfvT-fN5rRjkJaRRsF_tKFjYz"
+
+polling:
+  interval_seconds: 60
+
+nlm:
+  path: ""          # leave blank to auto-detect via PATH
+
+logging:
+  level: "INFO"
